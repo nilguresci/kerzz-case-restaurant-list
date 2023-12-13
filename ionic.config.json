@@ -1,0 +1,7 @@
+{
+  "name": "kerzz-assignment-restaurant-list",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
