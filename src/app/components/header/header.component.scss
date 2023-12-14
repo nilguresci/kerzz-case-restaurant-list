@@ -1,0 +1,31 @@
+.topHeader {
+  --background: white;
+}
+
+.searchBarContainer {
+  padding: 1rem;
+  display: flex;
+  align-items: baseline;
+  .searchFilterIcon {
+    img {
+      border-top-right-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+  }
+  ion-input.custom {
+    ::placeholder {
+      color: red;
+      opacity: 1; /* Firefox */
+    }
+  }
+  input {
+    color: red;
+  }
+}
+
+ion-searchbar.custom {
+  padding: 0;
+  input {
+    border-radius: 0;
+  }
+}

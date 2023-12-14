@@ -1,0 +1,40 @@
+<ion-card>
+  <img alt="Silhouette of mountains" src={{restaurantInfo.images[0].base64}} />
+  <div class="starContainer">
+    <img class="star" src="assets/star2.png" alt="">
+    <div class="starRate">{{restaurantInfo.storeInfo.rate}}</div>
+  </div>
+  <ion-card-header>
+    <ion-card-title>{{restaurantInfo.title}}</ion-card-title>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6" class="category">Coffee,Tatlı</ion-col>
+        <ion-col size="6">
+          <div class="minOrderAmount">
+            <img class="basket" src="assets/shopping-basket.png" alt="">
+            <div class="minAmount">Min. Sipariş Tutarı: {{restaurantInfo.storeInfo.minOrderPrice}}₺</div>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+
+        <ion-col size="6" class="distance">{{distance}} km yakınında</ion-col>
+        <ion-col size="6">
+          <ion-row>
+            <ion-col class="openCloseHoursContainer">
+              <div
+                [ngClass]="{'open': restaurantInfo.storeInfo.status === 'open', 'close' : restaurantInfo.storeInfo.status === 'close' }">
+                İşletme {{restaurantInfo.storeInfo.status === 'open' ? 'Açık' : 'Kapalı'}} :</div>
+              <div class="workingHours">
+                {{restaurantInfo.storeInfo.workingHours[0].open}} / {{restaurantInfo.storeInfo.workingHours[0].close}}
+              </div>
+            </ion-col>
+          </ion-row>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,84 @@
+ion-card {
+  margin: 0;
+  .starContainer {
+    background-color: #b70014;
+    width: 3rem;
+    height: 32px;
+    position: absolute;
+    display: flex;
+    top: 17px;
+    align-items: center;
+    left: 16px;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    .star {
+      width: 15px;
+      height: 14.35px;
+    }
+
+    .starRate {
+      top: 16px;
+      left: 33px;
+      background-color: #b70014;
+      font-size: 0.75rem;
+      color: #ffffff;
+      font-size: 12pt;
+    }
+  }
+  ion-card-header {
+    padding-left: 0.5rem;
+    padding-bottom: 0;
+    ion-card-title {
+      font-size: 16pt;
+      color: #1a1824;
+    }
+  }
+  ion-card-content {
+    padding: 0;
+    .category {
+      font-size: 11pt;
+      font-weight: bold;
+      color: #1a182480;
+    }
+    .basket {
+      width: 15px;
+      height: 15px;
+      align-self: center;
+    }
+
+    .minOrderAmount {
+      display: flex;
+      align-items: center;
+      color: #1a182480;
+    }
+
+    .distance {
+      color: #1a1824;
+      font-size: 10pt;
+      font-weight: 600;
+      letter-spacing: 0.1px;
+    }
+    .minAmount {
+      width: 149px;
+      height: 15px;
+      font-size: 10pt;
+      font-weight: 600;
+      letter-spacing: -0.02rem;
+      padding-left: 3px;
+    }
+
+    .openCloseHoursContainer {
+      display: flex;
+      font-size: 10pt;
+      font-weight: 600;
+      letter-spacing: -0.01rem;
+      white-space: nowrap;
+      .open {
+        color: #34c47c;
+      }
+      .close {
+        color: red;
+      }
+    }
+  }
+}

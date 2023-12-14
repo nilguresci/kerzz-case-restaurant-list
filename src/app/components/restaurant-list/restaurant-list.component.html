@@ -1,0 +1,11 @@
+<ion-content>
+  <h5 class="listTitle">Sonuçlar</h5>
+  <ion-list *ngFor="let restaurant of restaurants">
+    <ion-item>
+      <app-restaurant-card [restaurantInfo]="restaurant"></app-restaurant-card>
+    </ion-item>
+  </ion-list>
+  <ion-infinite-scroll (ionInfinite)="onIonInfinite($event)">
+    <ion-infinite-scroll-content></ion-infinite-scroll-content>
+  </ion-infinite-scroll>
+</ion-content>

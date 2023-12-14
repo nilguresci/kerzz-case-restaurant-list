@@ -1,0 +1,17 @@
+.listTitle {
+  margin-left: 1rem;
+  font-weight: bold;
+  font-size: 13pt;
+  color: #1a1824;
+}
+ion-content::part(background) {
+  background-color: #00000014;
+}
+ion-content {
+  ion-list {
+    background: transparent;
+  }
+}
+ion-item {
+  margin-bottom: 1rem;
+}
